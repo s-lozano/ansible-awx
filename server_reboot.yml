@@ -1,6 +1,15 @@
 ---
-- hosts: 10.0.2.15
-- name Rebooting_ssh_service
-  become: true
-  service: name=ssh state=restarted enabled=yes
+
+- name: Restart services
+  hosts: 127.0.0.1
+  gather_facts: false
+
+  tasks:
+    - name: Restart MySQL and Apache
+      service:
+        name: "{{ item }}" 
+        state: restarted
+      with_items: 
+        - mysql
+        - apache2
 ...
