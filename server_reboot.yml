@@ -1,7 +1,7 @@
 ---
 
 - name: Restart services
-  hosts: awx-web
+  hosts: awxweb
   gather_facts: false
 
   tasks:
