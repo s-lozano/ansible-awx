@@ -1,7 +1,7 @@
 ---
 
 - name: Restart services
-  hosts: 127.0.0.1
+  hosts: lab-awx.ddns.net
   gather_facts: false
 
   tasks:
