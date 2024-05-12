@@ -1,6 +1,6 @@
 ---
-- hosts: 127.0.0.1
+- hosts: 10.0.2.15
 - name Rebooting_ssh_service
   become: true
-  service: name=ssh state=restarted enable=yes
-  ...
+  service: name=ssh state=restarted enabled=yes
+...
