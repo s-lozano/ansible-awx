@@ -5,7 +5,7 @@
   gather_facts: false
 
   tasks:
-    - name: Restart MySQL and Apache
+    - name: Apache
       service:
         name: "{{ item }}" 
         state: restarted
