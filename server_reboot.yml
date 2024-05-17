@@ -6,9 +6,6 @@
 
   tasks:
     - name: Apache
-      service:
-        name: "{{ item }}" 
-        state: restarted
-      with_items: 
-        - httpd
+      commands: 
+          - "httpd -k restart" 
 ...
