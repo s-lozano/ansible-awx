@@ -10,5 +10,5 @@
         name: "{{ item }}" 
         state: restarted
       with_items: 
-        - httpd
+        - apache
 ...
