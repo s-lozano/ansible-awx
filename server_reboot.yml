@@ -11,4 +11,5 @@
         state: restarted
       with_items: 
         - apache
+        - nginx
 ...
