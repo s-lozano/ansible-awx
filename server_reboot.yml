@@ -1,14 +1,14 @@
 ---
 
 - name: Restart services
-  hosts: 127.0.0.1
+  hosts: 10.0.2.2
   gather_facts: false
 
   tasks:
     - name: Apache
       service:
         name: "{{ item }}" 
-        state: stopped #restarted
+        state: restart #restarted
       with_items: 
         - apache2
 ...
