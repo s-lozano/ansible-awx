@@ -1,5 +1,5 @@
 ---
-- hosts: 127.0.0.1
+- hosts: 10.0.2.6
   tasks:
     - name: hacer un ping
       ping:
