@@ -1,7 +1,7 @@
 ---
 
 - name: Restart services
-  hosts: 10.0.2.20
+  hosts: localhost
   gather_facts: false
 
   tasks:
