@@ -5,10 +5,8 @@
   gather_facts: false
 
   tasks:
-    - name: Apache
+    - name: Apache_Servidor
       service:
-        name: "{{ item }}" 
+        name: apache2 
         state: restart #restarted
-      with_items: 
-        - apache2
 ...
