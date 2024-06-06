@@ -2,7 +2,7 @@
 
 - name: Basic playbook run locally 
   gather_facts: true 
-  hosts: localhost 
+  hosts: 10.0.2.20 
   tasks: 
     - name: Doing a ping
       ping:
