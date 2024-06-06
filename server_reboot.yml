@@ -8,5 +8,5 @@
     - name: Apache_Servidor
       service:
         name: apache2 
-        state: restart #restarted
+        state: restarted
 ...
