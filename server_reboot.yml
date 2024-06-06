@@ -1,6 +1,6 @@
 ---
 - name: instalacion de apache2 y php
-  hosts: 10.0.2.20
+  hosts: webservers
   become: yes
   tasks:
     - name: instalar apache2
