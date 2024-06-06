@@ -1,12 +1,7 @@
 ---
-
-- name: Restart services
+- name: instalacion de apache2 y php
   hosts: 10.0.2.20
   become: yes
-
   tasks:
-    - name: Apache_Servidor
-      service:
-        name: apache2 
-        state: restarted
-...
+    - name: instalar apache2
+      apt: name=apache2 update_cache=yes state=latest
