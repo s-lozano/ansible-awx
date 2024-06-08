@@ -1,6 +1,6 @@
 ---
 - name: Restart services
-  hosts: 10.0.2.20
+  hosts: webserver1
   gather_facts: false
   become: yes
 
