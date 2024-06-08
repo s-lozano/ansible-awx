@@ -1,7 +1,7 @@
 ---
 - name: Restart services
   gather_facts: true 
-  hosts: 127.0.0.1
+  hosts: 10.0.2.20
   become: yes
 
   
