@@ -5,7 +5,7 @@
   become: yes
 
   
-  tasks:
+  handlers:
     - name: Restart apache2
       service:
         name:  apache2
