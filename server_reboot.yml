@@ -1,7 +1,7 @@
 ---
 - name: Restart services
+  gather_facts: true 
   hosts: webserver1
-  gather_facts: false
   become: yes
 
   tasks:
