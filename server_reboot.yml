@@ -4,7 +4,7 @@
   hosts: localhost
   become: yes
 
-  
+  tasks:
   handlers:
     - name: Restart apache2
       service:
