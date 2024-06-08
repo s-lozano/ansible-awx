@@ -4,10 +4,10 @@
   hosts: 127.0.0.1
   become: yes
 
-  tasks:
-     handlers:
-      - name: Restart apache2
-            service:
-                  name:  apache2
-                  state: restarted
+  
+  handlers:
+    - name: Restart apache2
+      service:
+        name:  apache2
+        state: restarted
 ...
