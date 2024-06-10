@@ -2,9 +2,9 @@
 - name: Restart services
   gather_facts: true
   hosts: host1
+  remote_user: root
   become: yes
   tasks:
-  handlers:
     - name: Restart apache2
       service:
         name:  apache2
