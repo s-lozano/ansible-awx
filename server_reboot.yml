@@ -2,7 +2,6 @@
 - name: Restart services
   gather_facts: true
   hosts: host1
-  become: yes
 
   tasks:
   handlers:
