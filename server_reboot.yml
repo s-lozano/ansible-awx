@@ -2,8 +2,7 @@
 - name: Restart services
   gather_facts: false
   hosts: host1
-  remote_user: root
-  become: yes
+    become: yes
   tasks:
     - name: Restart apache2
       service:
