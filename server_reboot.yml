@@ -1,7 +1,7 @@
 ---
 - name: Restart services
   gather_facts: false
-  hosts: localhost
+  hosts: 127.0.0.1
   vars:
     ansible_python_interpreter: /usr/bin/python3
   become: yes
