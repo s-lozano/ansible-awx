@@ -2,6 +2,8 @@
 - name: Restart services
   gather_facts: false
   hosts: 172.19.0.6
+  vars:
+    ansible_python_interpreter: /usr/bin/python3.6
   become: yes
   
   tasks:
@@ -10,3 +12,4 @@
         name:  apache2
         state: stopped
 ...
+
