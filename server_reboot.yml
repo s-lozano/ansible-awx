@@ -1,9 +1,9 @@
 ---
 - name: Restart services
   gather_facts: false
-  hosts: myhost
+  hosts: 172.19.0.6
   vars:
-    ansible_python_interpreter: /usr/bin/python3
+    ansible_python_interpreter: /usr/bin/python3.9
   become: yes
   
   tasks:
