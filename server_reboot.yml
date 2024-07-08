@@ -4,8 +4,8 @@
   hosts: 172.18.0.6 # Reemplaza con el nombre de tu host o grupo de hosts donde esta el contenedor.
   become: yes
   
-tasks:
-- name: Reiniciar Apache2
+  tasks:
+  - name: Reiniciar Apache2
   docker_container:
   name: ubuntu_A # Reemplaza con el nombre de tu contenedor
   restart_policy: always
