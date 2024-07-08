@@ -6,10 +6,8 @@
   
   tasks:
     - name: Restart apache2
-      docker_container: ubuntu_A 
       service:
         name:  apache2
-        state: stopped
-          
+        state: stopped   
 ...
 
