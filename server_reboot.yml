@@ -1,6 +1,8 @@
 ---
 - name: Reiniciar Apache2 en un contenedor
+  gather_facts: false
   hosts: 10.0.3.1 # Reemplaza con el nombre de tu host o grupo de hosts donde esta el contenedor.
+  become: yes
   
 tasks:
 - name: Reiniciar Apache2
