@@ -1,15 +1,11 @@
 ---
-- name: Restart services
-  gather_facts: false
-  hosts: 10.0.3.1
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
-  become: yes
+- name: Reiniciar Apache2 en un contenedor
+  hosts: 10.0.3.1 # Reemplaza con el nombre de tu host o grupo de hosts donde esta el contenedor.
   
-  tasks:
-    - name: Restart apache2
-      service:
-        name:  apache2
-        state: stopped
+tasks:
+- name: Reiniciar Apache2
+  docker_container:
+  name: ubuntu_A # Reemplaza con el nombre de tu contenedor
+  restart_policy: always
 ...
 
