@@ -5,9 +5,9 @@
   become: yes
   
   tasks:
-  - name: Reiniciar Apache2
-  docker_container:
-  name: ubuntu_A # Reemplaza con el nombre de tu contenedor
-  restart_policy: always
+    - name: Reiniciar Apache2
+      docker_container:
+        name: ubuntu_A # Reemplaza con el nombre de tu contenedor
+      restart_policy: always
 ...
 
