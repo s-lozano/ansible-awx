@@ -1,5 +1,6 @@
 ---
 - name: Reiniciar Apache2 en un contenedor
+  gather_facts: false
   hosts: 172.18.0.6 # Reemplaza con el nombre de tu host o grupo de hosts donde esta el contenedor.
   become: yes
   
