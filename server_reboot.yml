@@ -1,13 +1,13 @@
 ---
 - name: Reiniciar Apache2 en un contenedor
-  gather_facts: false
   hosts: 172.18.0.6 # Reemplaza con el nombre de tu host o grupo de hosts donde esta el contenedor.
   become: yes
   
   tasks:
-    - name: Restart apache2
-      service:
-        name:  apache2
-        state: stopped   
+    - name: Detener apache2
+      shell: docker exec ubuntu_A systemctl stop apache2
+      ignore_errors: yes
+    - name: Iniciar apache2
+      shell: docker exec ubuntu_A systemctl start apache2
 ...
 
